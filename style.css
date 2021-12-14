@@ -1,0 +1,49 @@
+.stars {
+    background-image: url(http://www.script-tutorials.com/demos/360/images/stars.png);
+    background-position-x:center;
+    background-position-y:top;
+    background-color:black;
+}
+.twinkling {
+    background: url(http://www.script-tutorials.com/demos/360/images/twinkling.png) top center;
+    animation: move-twink-back 200s linear infinite;
+}
+@keyframes move-twink-back{
+    from{background-position:0 0}
+    to{background-position:-10000px 5000px}
+}
+.stars, .twinkling {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.stars, .twinkling {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+.textOnScreen {
+    color:gold;
+}
+.textOnScreen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#characterSelect {
+    color:gold;
+    background-color: black;
+    padding: 10px;
+    width: 200px;
+}
+#textbox {
+    width: 500;
+}
+.header {
+    color:gold;
+    display: flex;
+    justify-content: center;
+}
